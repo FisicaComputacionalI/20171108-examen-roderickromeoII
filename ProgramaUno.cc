@@ -1,10 +1,13 @@
+//edad:21
+//valor de salida del programa:21
+//nombre:Rodrigo Romero de Lazaro
 #include <iostream>
 using namespace std;
 
 int isPrime(int X){
   int flag=0; 
  
-  for(int i=2; i<= (X/2) ; i++){
+  for(int i=2; i<=(X/2) ; i++){
     if(X%i==0){
       flag=1;
       break;
@@ -25,7 +28,7 @@ int main (){
  while (S!=0){ 
    cout << "ciclo S!=0, S " << S << ",p " << p << endl;
    while(p<S){
-       cout << "ciclo p<S, S " < S << ",p " << p << endl;
+       cout << "ciclo p<S, S " << S << ",p " << p << endl;
 
     while(isPrime(p)==1){
       cout << "ciclo isPrime, S " << S << ",p " << p << endl;
@@ -37,12 +40,12 @@ int main (){
     }  
     
     S=S-p;
-    p=p+2
+    p=p+2;
     cout << "final ciclo p<S, S " << S << ",p " << p << endl;
    }
 
   S=S-1;
-  cout < "final ciclo S!=0, S " << S << ",p " << p << endl;
+  cout << "final ciclo S!=0, S " << S << ",p " << p << endl;
  }
   
   cout << " el valor de P es " << p << endl;
